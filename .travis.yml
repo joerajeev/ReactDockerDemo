@@ -3,7 +3,7 @@ services:
  - docker
 
 before_install:
- - docker build -t joerajeev/ReactDockerDemo -f Dockerfile.dev .
+ - docker build -t joerajeev/react-docker-demo -f Dockerfile.dev .
 
 script:
- - docker run joerajeev/ReactDockerDemo npm run test -- --coverage 
+ - docker run joerajeev/react-docker-demo npm run test -- --coverage 
