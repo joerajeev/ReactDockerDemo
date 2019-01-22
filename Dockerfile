@@ -7,6 +7,8 @@ RUN npm install
 COPY ./ ./
 
 CMD ["npm", "run", "build"]
+RUN pwd
+RUN ls /app/build
 
 FROM nginx
 EXPOSE 80
